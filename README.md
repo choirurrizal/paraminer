@@ -1,3 +1,3 @@
 # paraminer
 Paraminer ~ Finds hidden parameters.
-[link to Google!](tcp://google.com)
+[link to Google!](parameter://google.com)
