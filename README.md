@@ -1,3 +1,3 @@
 # paraminer
 Paraminer ~ Finds hidden parameters.
-[link to Google!](javascript://google.com)
+[link to Google!](mailto://google.com)
