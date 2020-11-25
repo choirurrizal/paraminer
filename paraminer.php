@@ -92,7 +92,7 @@ class paraminer
 			echo "[\e[0;32;40mINFO\e[0m] Wordlist File \e[1;37;40m\"".self::$options['w']."\"\e[0m\n";self::__delay();
 			if(filter_var(self::$options['u'], FILTER_VALIDATE_URL)){
 				if(file_exists(self::$options['w'])){
-					self::$wordlist = explode("\r\n",file_get_contents(self::$options['w']));
+					self::$wordlist = explode("\n",file_get_contents(self::$options['w']));
 					for($key = 0; $key <= count(self::$wordlist)-1 ; $key++){
 						$spaces = ($key == 0 ? "" : substr(str_replace(str_split(self::$wordlist[$key-1]), " ", self::$wordlist[$key-1]),0,(strlen(self::$wordlist[$key-1]) > strlen(self::$wordlist[$key]) ? strlen(self::$wordlist[$key-1])-strlen(self::$wordlist[$key]) : 1)));
 						echo "[\e[0;33;40mTESTING\e[0m] ".self::$wordlist[$key]."$spaces\r";
