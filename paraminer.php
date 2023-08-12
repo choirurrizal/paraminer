@@ -84,7 +84,7 @@ class paraminer
 	public static function __run()
 	{
 		self::$options = getopt("u:w:");
-		self::$valueOfParam = "1l0v3y0u";
+		self::$valueOfParam = "8ada4f766321 ";
 		if(isset(self::$options['u']) && isset(self::$options['w'])){
 			self::$date = date("H:i:s Y-m-d");
 			echo "[\e[0;32;40mINFO\e[0m] Starting at ".self::$date."\n";self::__delay();
